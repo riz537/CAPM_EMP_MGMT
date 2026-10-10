@@ -1,0 +1,40 @@
+GET http://localhost:4004/odata/v4/empmgmt/Employees
+
+###
+
+### Read Employee
+GET http://localhost:4004/odata/v4/empmgmt/Employees(89520649-0c6c-49ea-b4be-78623fbefdf3)
+
+###
+### Promote Employee
+POST http://localhost:4004/odata/v4/empmgmt/Employees(89520649-0c6c-49ea-b4be-78623fbefdf3)/EmpmgmtService.promoteEmployee
+Content-Type: application/json
+
+{
+    "newDesignation": "SR DEVELOPER"
+}
+###
+### Make Permanent
+POST http://localhost:4004/odata/v4/empmgmt/Employees(89520649-0c6c-49ea-b4be-78623fbefdf3)/EmpmgmtService.makePermanent
+Content-Type: application/json
+
+{
+    "status": "PERMANENT"
+}
+
+###
+### Get Annual Bonus
+GET http://localhost:4004/odata/v4/empmgmt/Employees(89520649-0c6c-49ea-b4be-78623fbefdf3)/EmpmgmtService.getAnnualBonus()
+
+###
+### Give Hike To All Employees
+POST http://localhost:4004/odata/v4/empmgmt/giveHike
+Content-Type: application/json
+
+{
+    "hike": 2
+}
+
+###
+### Get Top Rated Employees
+GET http://localhost:4004/odata/v4/empmgmt/getTopRatedEmployees()
