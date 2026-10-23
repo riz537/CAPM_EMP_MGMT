@@ -3,11 +3,11 @@ GET http://localhost:4004/odata/v4/empmgmt/Employees
 ###
 
 ### Read Employee
-GET http://localhost:4004/odata/v4/empmgmt/Employees(89520649-0c6c-49ea-b4be-78623fbefdf3)
+GET http://localhost:4004/odata/v4/empmgmt/Employees(17347225-8a47-4f30-9f53-3c46192d7583)
 
 ###
 ### Promote Employee
-POST http://localhost:4004/odata/v4/empmgmt/Employees(89520649-0c6c-49ea-b4be-78623fbefdf3)/EmpmgmtService.promoteEmployee
+POST http://localhost:4004/odata/v4/empmgmt/Employees(17347225-8a47-4f30-9f53-3c46192d7583)/EmpmgmtService.promoteEmployee
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 ###
 ### Make Permanent
-POST http://localhost:4004/odata/v4/empmgmt/Employees(89520649-0c6c-49ea-b4be-78623fbefdf3)/EmpmgmtService.makePermanent
+POST http://localhost:4004/odata/v4/empmgmt/Employees(17347225-8a47-4f30-9f53-3c46192d7583)/EmpmgmtService.makePermanent
 Content-Type: application/json
 
 {
@@ -24,7 +24,7 @@ Content-Type: application/json
 
 ###
 ### Get Annual Bonus
-GET http://localhost:4004/odata/v4/empmgmt/Employees(89520649-0c6c-49ea-b4be-78623fbefdf3)/EmpmgmtService.getAnnualBonus()
+GET http://localhost:4004/odata/v4/empmgmt/Employees(17347225-8a47-4f30-9f53-3c46192d7583)/EmpmgmtService.getAnnualBonus()
 
 ###
 ### Give Hike To All Employees

@@ -11,7 +11,7 @@ entity Employees : cuid,managed {
     salary: Decimal(13,2);
     rating: Int16;
     status: String;
-    dof: Date;
+    doj: Date;
     image: LargeBinary @Core.MediaType:'image/jpg';
     certifications: Composition of many Certifications on certifications.emp = $self;
     docs: Composition of many Docs on docs.emp = $self;
